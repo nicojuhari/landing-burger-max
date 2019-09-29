@@ -1,0 +1,23 @@
+@import "./nav/nav-desktop.css";
+@import "./nav/nav-mobile.css";
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(29, 29, 29, 0.85);
+    transition: all 1s;
+}
+
+header.hide:not(:hover) {
+    transform: translateY(-100%);
+}
+
+.logo {
+    background-image: url("../assets/images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px; 
+}
+

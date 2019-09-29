@@ -1,0 +1,92 @@
+.scroll-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #66B227;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 20px rgba(19, 62, 31, 0.35)
+}
+
+.scroll-btn>span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+.scroll-btn>.down-icon {
+    background-image: url("../assets/images/icons/down-arrow.svg");
+}
+
+.scroll-btn>.up-icon {
+    background-image: url("../assets/images/icons/up-arrow.svg");
+}
+
+.to-top{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    bottom: 30px;
+    right: 30px;
+    transition: all 0.6s;
+}
+
+.to-top.hide {
+    z-index: 2;
+    opacity: 1;
+}
+
+
+.toggle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+    cursor: pointer;
+    border: 1px solid #c8582c;
+}
+
+.toggle-btn:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/images/icons/up-arrow-orange.svg");
+    background-size: contain;
+}
+
+.order-btn {
+    max-width: 300px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    background-color: #c8582c;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.s-icon{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-size: contain;
+    background-position: center center;
+}
+
+.s-icon.fb {
+    background-image: url("../assets/images/icons/fb.svg");
+}
+
+.s-icon.in {
+    background-image: url("../assets/images/icons/in.svg");
+}
+
+.s-icon.gh {
+    background-image: url("../assets/images/icons/gh.svg");
+}

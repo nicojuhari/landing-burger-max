@@ -1,0 +1,32 @@
+footer {
+    background-color:rgb(29, 29, 29);
+}
+
+.footer {
+    height: 140px;
+    flex-direction: column;
+}
+
+
+.social-buttons {
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.social-buttons .s-icon {
+    margin: 0 5px;
+}
+
+
+@media (min-width:768px) {
+    .footer {
+        flex-direction: row;
+    }
+    .social-buttons {
+        margin-top: 0;
+    }
+
+    .social-buttons .s-icon {
+        margin: 0 0 0 10px;
+    }
+}

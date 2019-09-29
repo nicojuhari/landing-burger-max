@@ -1,0 +1,64 @@
+.section-meal-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    height: calc(100vh - 60px);
+    min-height: 600px;
+}
+
+section.meals.hide .section-meal-content{
+    display: none;
+}
+
+.meal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meal-desc {
+    font-size: 1.2em;
+    color: #696969;
+    margin: 1em 0;
+}
+
+.meal-order {
+    text-align: center;
+}
+
+.meal-price {
+    font-size: 2em;
+    color: #66b227;
+}
+
+.meal-cta {
+    margin: 1em 0;
+}
+
+.meal-image {
+    position: relative;
+}
+
+.meal-deal {
+    position: absolute;
+    background: #66b227;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: calc(50% - 200px);
+    right: 0px;
+}
+
+@media (min-width:768px){
+    .section-meal-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .meal-order {
+        text-align: initial;
+    }
+}

@@ -1,0 +1,56 @@
+/*Mobile Nav  */
+
+.mobile-nav {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    right: 0;
+    background: rgba(29, 29, 29, 0.85);
+    border: 1px solid #444;
+    padding: 20px 10px;
+    transform: translateY(-50%);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    transition: all 0.6s;
+}
+
+.mobile-nav.hide {
+    transform: translate(100%, -50%);
+}
+
+.mobile-nav li{
+    margin: 15px 0;
+    line-height: 0;
+    width: 10px;
+}
+
+.mobile-nav li a {
+    opacity: 0;
+    line-height: 0;
+    width: 0;
+}
+
+.mobile-nav li a:after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+
+.mobile-nav li.active a:after {
+    background-color: #66B227;
+}
+
+@media(min-width:768px){
+    .mobile-nav {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}

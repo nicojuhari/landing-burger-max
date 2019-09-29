@@ -1,0 +1,51 @@
+@import "./section-home.css";
+@import "./section-meal-header.css";
+@import "./section-meal-content.css";
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    position: relative;
+}
+
+/* Home Section*/
+section.home {
+    background-position: bottom right;
+}
+
+/* Meals Section*/
+section.meals {
+    background-image: url("../../assets/images/bg/meals.jpg");
+    transition: all 0.6s;
+}
+
+section.meals:not(.hide) {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+section.meals.active {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+section.hide {
+    padding: 10px 0;
+}
+
+section.meals.hide:nth-child(2) {
+    padding-top: 20px;
+}
+
+section.meals.hide:last-child {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+

@@ -40,7 +40,7 @@ createSections = (...items) => {
         sectionHome.classList.add(homePage.id);
         sectionHome.classList.add('active');
         sectionHome.setAttribute('id', homePage.id);
-        sectionHome.style.backgroundImage = `url(/assets/images/bg/${homePage.bgImage})`;
+        sectionHome.style.backgroundImage = `url(./assets/images/bg/${homePage.bgImage})`;
         sectionHome.innerHTML = `
                                 <div class="hero-banner container">
                                     <h1 class="hb-title">${homePage.pageTitle}</h1>
@@ -74,7 +74,7 @@ createSections = (...items) => {
                     </div>
                     <div class="meal-image flex-center-center">
                         ${ meal.deal ? `<span class="meal-deal">Today's<br>Deal!</span>` : ''} 
-                        <img  class="option-image" src="/assets/images/meals/${meal.image}"/>
+                        <img  class="option-image" src="./assets/images/meals/${meal.image}"/>
                     </div>
                 </div>
             `;

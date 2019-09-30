@@ -1,9 +1,9 @@
 .section-meal-header {
     width: 100%;
     height: 60px;
-    transform: translateY(100px);
+    transform: translateY(15px);
     z-index: 2;
-    position: relative;
+    position: absolute;
 }
 
 .smh-title {
@@ -18,6 +18,7 @@ section.hide .section-meal-header {
     border: 1px solid #444;
     background-color: rgba(29, 29, 29, 0.6);
     transform: translateY(0);
+    position: relative;
 }
 
 section.hide .section-meal-header .smh-title{
@@ -32,4 +33,11 @@ section.hide .section-meal-header .toggle-btn:after{
     section.hide .section-meal-header {
         border-radius: 6px;
     }
+
+    section .section-meal-header {
+        transform: translateY(100px);
+    }
+
+    
+
 }

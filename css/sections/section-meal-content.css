@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
-    height: calc(100vh - 60px);
-    min-height: 600px;
+    height: 100vh;
+    min-height: 550px;
 }
 
 section.meals.hide .section-meal-content{
@@ -49,8 +49,8 @@ section.meals.hide .section-meal-content{
     justify-content: center;
     align-items: center;
     text-align: center;
-    top: calc(50% - 200px);
-    right: 0px;
+    top: calc(50% - 120px);
+    left: 0px;
 }
 
 @media (min-width:768px){
@@ -60,5 +60,11 @@ section.meals.hide .section-meal-content{
 
     .meal-order {
         text-align: initial;
+    }
+
+    .meal-deal {
+        top: calc(50% - 200px);
+        right: 0px;
+        left: auto;
     }
 }

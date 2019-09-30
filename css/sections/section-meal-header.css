@@ -32,10 +32,13 @@ section.hide .section-meal-header .toggle-btn:after{
 @media (min-width:768px){
     section.hide .section-meal-header {
         border-radius: 6px;
+        transform: translate(0, 0);
+        left: auto;
     }
 
     section .section-meal-header {
-        transform: translateY(100px);
+        transform: translate(-50%, 100px);
+        left: 50%;
     }
 
     
